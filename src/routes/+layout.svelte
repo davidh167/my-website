@@ -1,4 +1,5 @@
 <script lang="ts">
+
 	import '../app.postcss';
 	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
 
@@ -25,7 +26,10 @@
 	import { TabGroup, Tab } from '@skeletonlabs/skeleton';
 	let showTabs = false; // Controls the visibility of the tab group
 	let tabSet = 0; // Manages the active tab state
+	
 
+	// This can be false if you're using a fallback (i.e. SPA mode)
+	export const prerender = true;
 </script>
 
 <!-- App Shell -->
