@@ -1,7 +1,8 @@
 <script lang="ts">
 
 	import Navigation from '$lib/Navigation/Navigation.svelte';
-	import { initializeStores, Drawer, getDrawerStore } from '@skeletonlabs/skeleton';
+	import { initializeStores, Drawer, getDrawerStore} from '@skeletonlabs/skeleton';
+	import type { DrawerSettings } from '@skeletonlabs/skeleton';
 
 	initializeStores();
 	const drawerStore =	 getDrawerStore();
@@ -33,8 +34,18 @@
 	import { TabGroup, Tab, TabAnchor } from '@skeletonlabs/skeleton';
 	import { page } from '$app/stores';
 
+	const drawerSettings: DrawerSettings = {
+	id: 'example-3',
+	// Provide your property overrides:
+	bgDrawer: 'bg-slate-800 text-white',
+	// bgBackdrop: 'bg-gradient-to-tr from-blue-500/50 via-purple-500/50 to-indigo-500/50',
+	width: 'w-[280px] md:w-[480px]',
+	padding: 'p-4',
+	rounded: 'rounded-xl',
+};
+
 	function drawerOpen(): void {
-		drawerStore.open({});
+		drawerStore.open(drawerSettings);
 	}
 
 	// This can be false if you're using a fallback (i.e. SPA mode)
@@ -91,7 +102,7 @@
 							</svg>
 						</span>
 					</button>
-					<strong class="text-xl uppercase">Skeleton</strong>
+					<strong class="text-xl uppercase">David Hernandez</strong>
 				</div>
 
 
