@@ -4,7 +4,7 @@
 	<div class="container mx-auto flex justify-center items-center min-h-screen">
 		<div class="space-y-10 text-center flex flex-col items-center">
 
-			
+
 			<h2 class="h2">About Me</h2>
 
 			<!-- Photo -->
@@ -82,9 +82,9 @@
 			</p>
 
 			<!-- Call to Action -->
-			<div class="mt-10">
+			<!-- <div class="mt-10">
 				<a href="/contact" class="btn variant-filled">Let’s Connect</a>
-			</div>
+			</div> -->
 		</div>
 	</div>
 </div>
