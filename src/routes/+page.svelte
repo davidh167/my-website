@@ -6,7 +6,6 @@
 		<!-- Animated Logo -->
 		
 
-
 		<figure>
 			<img src="/logo.png" alt="Logo" class="fill-token -scale=[50%]" />
 		</figure>
