@@ -31,6 +31,31 @@
 	export const prerender = true;
 </script>
 
+<style>
+	/* Default: figure is visible */
+	figure {
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  max-width: 100%;
+	  margin: 0 auto;
+	}
+  
+	figure img {
+	  max-width: 50px;
+	  max-height: 50px;
+	  width: auto;
+	  height: auto;
+	}
+  
+	/* When the viewport width exceeds 768px, hide the figure */
+	@media screen and (max-width: 550px) {
+	  figure {
+		display: none;
+	  }
+	}
+  </style>
+
 <!-- App Shell -->
 <AppShell>
 	<svelte:fragment slot="header">
@@ -40,7 +65,8 @@
 			<svelte:fragment slot="lead">
 				<!-- <h3 class="h3">David Hernandez</h3> -->
 				 <figure >
-					<img src="/logo.png" alt="Logo" style="max-width: 50px; max-height: 50px; width: auto; height: auto;" />
+					<img src="/logo.png" alt="Logo" />
+				</figure>
 			</svelte:fragment>
 			
 
