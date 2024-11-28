@@ -25,8 +25,6 @@
 
 	import { TabGroup, Tab, TabAnchor } from '@skeletonlabs/skeleton';
 	import { page } from '$app/stores';
-	import type { Readable } from 'svelte/store';
-	let showTabs = false; // Controls the visibility of the tab group
 
 
 	// This can be false if you're using a fallback (i.e. SPA mode)
@@ -40,38 +38,13 @@
 		<AppBar>
 
 			<svelte:fragment slot="lead">
-				<h3 class="h3">David Hernandez</h3>
+				<!-- <h3 class="h3">David Hernandez</h3> -->
+				 <figure >
+					<img src="/logo.png" alt="Logo" style="max-width: 50px; max-height: 50px; width: auto; height: auto;" />
 			</svelte:fragment>
 			
+
 			<svelte:fragment slot="trail">
-				<a
-					class="btn btn-sm variant-ghost-surface hide-on-small"
-					href="https://discord.gg/EXqV7W8MtY"
-					target="_blank"
-					rel="noreferrer"
-				>
-					Discord
-				</a>
-				<!-- <a
-					class="btn btn-sm variant-ghost-surface hide-on-small"
-					href="https://twitter.com/SkeletonUI"
-					target="_blank"
-					rel="noreferrer"
-				>
-					Twitter
-				</a> -->
-				<a
-					class="btn btn-sm variant-ghost-surface hide-on-small"
-					href="https://github.com/skeletonlabs/skeleton"
-					target="_blank"
-					rel="noreferrer"
-				>
-					GitHub
-				</a>
-			</svelte:fragment>
-
-
-			<svelte:fragment slot="headline">
 				<!-- <a href="./">
 					<strong class="text-xl">Home</strong>
 				</a> -->
