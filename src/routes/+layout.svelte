@@ -23,10 +23,11 @@
 	import { storePopup } from '@skeletonlabs/skeleton';
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 
-	import { TabGroup, Tab } from '@skeletonlabs/skeleton';
+	import { TabGroup, Tab, TabAnchor } from '@skeletonlabs/skeleton';
+	import { page } from '$app/stores';
+	import type { Readable } from 'svelte/store';
 	let showTabs = false; // Controls the visibility of the tab group
-	let tabSet = 0; // Manages the active tab state
-	
+
 
 	// This can be false if you're using a fallback (i.e. SPA mode)
 	export const prerender = true;
@@ -38,7 +39,9 @@
 		<!-- App Bar -->
 		<AppBar>
 			<svelte:fragment slot="lead">
-				<strong class="text-xl uppercase">David Hernandez</strong>
+				<a href="./">
+					<strong class="text-xl">Home</strong>
+				</a>
 			</svelte:fragment>
 			
 			<svelte:fragment slot="trail">
@@ -73,18 +76,47 @@
 
 	<svelte:fragment slot="footer">
 		<TabGroup justify="justify-center">
+			<TabAnchor href="/">
+				<!-- <svelte:fragment slot="lead">🏠</svelte:fragment> -->
+				<span>Home</span>
+			</TabAnchor><TabAnchor href="/aboutme" selected={$page.url.pathname === '/aboutme'}>
+				<!-- <svelte:fragment slot="lead">🏠</svelte:fragment> -->
+				<span>About Me</span>
+			</TabAnchor>
+			<TabAnchor href="/skills">
+				<!-- <svelte:fragment slot="lead">🔍</svelte:fragment> -->
+				<span>Skills</span>
+			</TabAnchor>
+			<TabAnchor href="/projects">
+				<!-- <svelte:fragment slot="lead">⚙️</svelte:fragment> -->
+				<span>Projects</span>
+			</TabAnchor>
+			<TabAnchor href="/research">
+				<!-- <svelte:fragment slot="lead">📚</svelte:fragment> -->
+				<span>Research</span>
+			</TabAnchor>
+
+		</TabGroup>
+	
+
+		<!-- <TabGroup justify="justify-center">
 			<Tab bind:group={tabSet} name="tab1" value={0}>
 				<svelte:fragment slot="lead">🏠</svelte:fragment>
-				<span>Home</span>
+				<span>About Me</span>
 			</Tab>
 			<Tab bind:group={tabSet} name="tab2" value={1}>
 				<svelte:fragment slot="lead">🔍</svelte:fragment>
-				<span>Search</span>
+				<span>Skills</span>
 			</Tab>
 			<Tab bind:group={tabSet} name="tab3" value={2}>
 				<svelte:fragment slot="lead">⚙️</svelte:fragment>
-				<span>Settings</span>
+				<span>Projects</span>
 			</Tab>
+			<Tab bind:group={tabSet} name="tab4" value={3}>
+				<svelte:fragment slot="lead">🏠</svelte:fragment>
+				<span>Research</span>
+			</Tab> -->
+
 			<!-- <svelte:fragment slot="panel">
 				{#if tabSet === 0}
 					<p>Home content</p>
@@ -93,8 +125,10 @@
 				{:else if tabSet === 2}
 					<p>Settings content</p>
 				{/if}
-			</svelte:fragment> -->
-		</TabGroup>
+			</svelte:fragment>
+		</TabGroup> -->
+
+
 	</svelte:fragment>
 	<slot />
 </AppShell>
