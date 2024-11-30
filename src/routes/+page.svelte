@@ -2,7 +2,7 @@
 	class="relative min-h-screen bg-gradient-to-tr from-blue-500/50 via-purple-500/50 to-indigo-500/50"
 >
 	<div class="container mx-auto flex justify-center items-center min-h-screen">
-		<div class="space-y-10 text-center flex flex-col items-center">
+		<div class="space-y-10 text-center flex flex-col items-center py-10">
 			<h2 class="h2 max-w-lg mx-auto">Hi, my name is David! 👋</h2>
 
 			<!-- Animated Logo -->
@@ -46,13 +46,6 @@
 </div>
 
 <style lang="postcss">
-	figure {
-		@apply flex relative flex-col;
-	}
-	figure svg,
-	.img-bg {
-		@apply w-64 h-64 md:w-80 md:h-80;
-	}
 	.img-bg {
 		@apply absolute z-[-1] rounded-full blur-[50px] transition-all;
 		animation:
@@ -76,16 +69,6 @@
 	@keyframes pulse {
 		50% {
 			transform: scale(1.5);
-		}
-	}
-
-	.hide-on-small {
-		display: none;
-	}
-
-	@media (min-width: 768px) {
-		.hide-on-small {
-			display: flex;
 		}
 	}
 </style>

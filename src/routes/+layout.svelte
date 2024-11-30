@@ -17,6 +17,10 @@
 	import { storeHighlightJs } from '@skeletonlabs/skeleton';
 	import xml from 'highlight.js/lib/languages/xml'; // for HTML
 	import css from 'highlight.js/lib/languages/css';
+	import '@fortawesome/fontawesome-free/css/all.min.css';
+	
+
+
 	import javascript from 'highlight.js/lib/languages/javascript';
 	import typescript from 'highlight.js/lib/languages/typescript';
 
@@ -35,14 +39,14 @@
 	import { page } from '$app/stores';
 
 	const drawerSettings: DrawerSettings = {
-	id: 'example-3',
-	// Provide your property overrides:
-	bgDrawer: 'bg-slate-800 text-white',
-	// bgBackdrop: 'bg-gradient-to-tr from-blue-500/50 via-purple-500/50 to-indigo-500/50',
-	width: 'w-[280px] md:w-[480px]',
-	padding: 'p-4',
-	rounded: 'rounded-xl',
-};
+		id: 'example-3',
+		// Provide your property overrides:
+		bgDrawer: 'bg-slate-800 text-white',
+		// bgBackdrop: 'bg-gradient-to-tr from-blue-500/50 via-purple-500/50 to-indigo-500/50',
+		width: 'w-[280px] md:w-[480px]',
+		padding: 'p-4',
+		rounded: 'rounded-xl',
+	};
 
 	function drawerOpen(): void {
 		drawerStore.open(drawerSettings);
@@ -77,6 +81,7 @@
 	}
   </style>
 
+<link href="https://cdn.jsdelivr.net/npm/devicon@2.16.0/devicon.min.css" rel="stylesheet">
 
 <Drawer>
 	<hr />

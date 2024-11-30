@@ -2,10 +2,8 @@
 	class="relative min-h-screen bg-gradient-to-tr from-blue-500/50 via-purple-500/50 to-indigo-500/50"
 >
 	<div class="container mx-auto flex justify-center items-center min-h-screen">
-		<div class="space-y-10 text-center flex flex-col items-center">
-
-
-			<h2 class="h2">About Me</h2>
+		<div class="space-y-10 text-center flex flex-col items-center py-10">
+			<h2 class="h2 max-w-lg mx-auto">About Me 👋</h2>
 
 			<!-- Photo -->
 			<!-- <div class="w-32 h-32 rounded-full overflow-hidden shadow-lg">
@@ -18,6 +16,9 @@
 				creating impactful solutions in AI and NLP. Outside of work, I enjoy exploring cutting-edge
 				technologies and contributing to open-source projects.
 			</p>
+
+			<hr class="w-1/2 my-10" />
+
 
 			<!-- Mission -->
 			<h3 class="font-semibold text-lg">My Mission</h3>
@@ -88,3 +89,33 @@
 		</div>
 	</div>
 </div>
+
+
+
+<style lang="postcss">
+	.img-bg {
+		@apply absolute z-[-1] rounded-full blur-[50px] transition-all;
+		animation:
+			pulse 5s cubic-bezier(0, 0, 0, 0.5) infinite,
+			glow 5s linear infinite;
+	}
+	@keyframes glow {
+		0% {
+			@apply bg-primary-400/50;
+		}
+		33% {
+			@apply bg-secondary-400/50;
+		}
+		66% {
+			@apply bg-tertiary-400/50;
+		}
+		100% {
+			@apply bg-primary-400/50;
+		}
+	}
+	@keyframes pulse {
+		50% {
+			transform: scale(1.5);
+		}
+	}
+</style>
