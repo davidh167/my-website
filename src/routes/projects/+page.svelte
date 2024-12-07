@@ -7,33 +7,34 @@
 
     <!-- Projects Grid -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
-        <!-- Project 1: Quimby -->
-        <a href="/projects/quimby" class="block" aria-label="Visit Quimby Project Page" role="link">
+        <!-- Project 1: Quimby-Chatbot -->
+        <a href="/projects/quimby" class="block" aria-label="Visit Quimby-Chatbot Project Page" role="link">
             <div class="bg-gray-800 bg-opacity-80 shadow-lg rounded-lg p-6 text-center hover:bg-gray-700 hover:shadow-xl transition-all duration-300">
-                <h3 class="font-semibold text-lg">Quimby: Legislative NLP</h3>
+                <h3 class="font-semibold text-lg">Quimby-Chatbot: LLM-Powered Chatbot</h3>
                 <p class="text-sm mt-2">
-                    Developed NLP pipelines for analyzing legislative data to identify contradictions in legislators' statements and policies.
+                    Developed an LLM-powered chatbot with an ingrained personality, utilizing prompt engineering to refine its responses and enhance user engagement.
                 </p>
                 <ul class="list-disc list-inside text-left mt-4">
-                    <li><strong>Tools:</strong> Python, SpaCy, LangChain, MySQL</li>
-                    <li><strong>Impact:</strong> Supported public transparency and accountability in government.</li>
+                    <li><strong>Tools:</strong> Python, SpaCy, LiberaChat IRC API</li>
+                    <li><strong>Impact:</strong> Improved user interaction quality through personalized chatbot experiences.</li>
                 </ul>
             </div>
         </a>
 
-        <!-- Project 2: Ambiguity Detection -->
-        <a href="/projects/ambiguity-detection" class="block" aria-label="Visit Ambiguity Detection Project Page" role="link">
+        <!-- Project 2: Ambiguity Phenom Detection -->
+        <a href="/projects/ambiguity-detection" class="block" aria-label="Visit Ambiguity Phenom Detection Project Page" role="link">
             <div class="bg-gray-800 bg-opacity-80 shadow-lg rounded-lg p-6 text-center hover:bg-gray-700 hover:shadow-xl transition-all duration-300">
-                <h3 class="font-semibold text-lg">Ambiguity Detection in NLP</h3>
+                <h3 class="font-semibold text-lg">Ambiguity Phenom Detection</h3>
                 <p class="text-sm mt-2">
-                    Created a model for detecting ambiguous language in legislative texts, improving interpretability for stakeholders.
+                    Designed a methodology to detect ambiguity in legislative texts, leveraging embedding techniques for data representation and validating the model's classification.
                 </p>
                 <ul class="list-disc list-inside text-left mt-4">
-                    <li><strong>Tools:</strong> Python, NLTK, Transformer Models</li>
-                    <li><strong>Impact:</strong> Enabled accurate analysis of complex, nuanced language in legal contexts.</li>
+                    <li><strong>Tools:</strong> MySQL, Python, Selenium, REST APIs, PyPDF</li>
+                    <li><strong>Impact:</strong> Enabled more accurate analysis of ambiguous language in legal texts, improving clarity for stakeholders.</li>
                 </ul>
             </div>
         </a>
+
 
         <!-- Project 3: DisclosureDisco Pipeline -->
         <a href="/projects/disclosure-disco" class="block" aria-label="Visit DisclosureDisco Project Page" role="link">
