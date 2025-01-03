@@ -1,9 +1,9 @@
-<div
+<!-- <div
 	class="relative min-h-screen bg-gradient-to-tr from-blue-500/50 via-purple-500/50 to-indigo-500/50"
->
+> -->
 	<div class="container mx-auto flex justify-center items-center min-h-screen">
 		<div class="space-y-10 text-center flex flex-col items-center py-10">
-			<h2 class="h2 max-w-lg mx-auto">Hi, my name is David! 👋</h2>
+			<h2 class="h2 max-w-xl mx-auto">Hi, my name is David! 👋</h2>
 
 			<!-- Animated Logo -->
 			<section class="img-bg"></section>
@@ -43,7 +43,7 @@
 			</div>
 		</div>
 	</div>
-</div>
+<!-- </div> -->
 
 <style lang="postcss">
 	.img-bg {

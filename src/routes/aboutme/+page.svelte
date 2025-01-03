@@ -1,6 +1,6 @@
-<div
+<!-- <div
 	class="relative min-h-screen bg-gradient-to-tr from-blue-500/50 via-purple-500/50 to-indigo-500/50"
->
+> -->
 	<div class="container mx-auto flex justify-center items-center min-h-screen">
 		<div class="space-y-10 text-center flex flex-col items-center py-10">
 			<h2 class="h2 max-w-lg mx-auto">About Me 👋</h2>
@@ -88,7 +88,7 @@
 			</div> -->
 		</div>
 	</div>
-</div>
+<!-- </div> -->
 
 
 

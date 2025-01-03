@@ -79,13 +79,21 @@
 		display: none;
 	  }
 	}
+
+
+
   </style>
 
 <link href="https://cdn.jsdelivr.net/npm/devicon@2.16.0/devicon.min.css" rel="stylesheet">
 
 <Drawer>
-	<hr />
-	<h2 class="p-4">Navigation</h2>
+	<hr style="margin-top: 10px; margin-bottom 10px;" />
+		<strong class="text-xl p-4">
+			Navigation
+		</strong>
+		<!-- <h2 class="p-4">
+			Navigation
+		</h2> -->
 	<hr />
 	<Navigation />
 </Drawer>
@@ -108,13 +116,14 @@
 						</span>
 					</button>
 					<strong class="text-xl uppercase">David Hernandez</strong>
+					<figure style="margin-left: 15px;">
+						<img src="/logo.png" alt="Logo" />
+					</figure>
 				</div>
 
 
 				<!-- <h3 class="h3">David Hernandez</h3> -->
-				 <figure >
-					<img src="/logo.png" alt="Logo" />
-				</figure>
+				
 			</svelte:fragment>
 			
 
