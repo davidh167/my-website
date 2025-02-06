@@ -13,8 +13,7 @@
 			<!-- Introduction -->
 			<p class="text-lg max-w-lg mx-auto">
 				Hi, I’m David! I’m a software engineer, researcher, and lifelong learner passionate about
-				creating impactful solutions in AI and NLP. Outside of work, I enjoy exploring cutting-edge
-				technologies and contributing to open-source projects.
+				creating impactful solutions with AI.
 			</p>
 
 			<hr class="w-1/2 my-10" />

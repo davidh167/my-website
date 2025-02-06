@@ -47,7 +47,7 @@
     <div class="mt-16">
         <h3 class="font-semibold text-lg text-center">Leadership & Collaboration</h3>
         <p class="text-center text-sm max-w-lg mx-auto mt-4">
-            - Lead Tech Officer at CS+AI Club: Increased web traffic by 60% and enhanced technical operations.<br>
+            - Lead Tech Officer at CS+AI Club: Recovered domain, restored website functionality, and managed updates and maintenance to improve technical operations.<br>
             - Webmaster Chair at Color Coded Club: Front-end development and fostering inclusivity in STEM.
         </p>
     </div>

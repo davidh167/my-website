@@ -9,12 +9,13 @@
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
         <!-- Research 1: Data Mining for Public Policy -->
         <div class="bg-gray-800 bg-opacity-80 shadow-lg rounded-lg p-6 text-center">
-            <h3 class="font-semibold text-lg">Data Mining for Public Policy</h3>
+            <h3 class="font-semibold text-lg">Digital Democracy</h3>
             <p class="text-sm mt-2">
                 Partnered with a non-profit to develop data mining solutions for state budgets, campaign financials, and legislator activity.
             </p>
+            
             <ul class="list-disc list-inside text-left mt-4">
-                <li><strong>Role:</strong> Research Fellow at IATPP</li>
+                <li><strong>Role:</strong> Grad Researcher at IATPP</li>
                 <li><strong>Tools:</strong> Python, Selenium, BeautifulSoup, MySQL</li>
                 <li><strong>Impact:</strong> Contributed to government transparency and public awareness.</li>
             </ul>

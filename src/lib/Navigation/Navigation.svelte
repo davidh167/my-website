@@ -7,6 +7,11 @@
 
     function drawerClose(): void {
         drawerStore.close();
+        // Reset focus to avoid browser keeping an anchor "focused"
+        console.log("Active element" + document.activeElement); // Log the current active element
+        console.log("Focused element" + document.querySelector(":focus")); // Log the current focused element
+        // Safely blur the active element
+        (document.activeElement as HTMLElement)?.blur();
     }
 
     $: classesActive = (href: string) => (href === $page.url.pathname ? '!variant-filled-tertiary' : '');

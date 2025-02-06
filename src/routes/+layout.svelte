@@ -165,6 +165,7 @@
 
 	<svelte:fragment slot="footer">
 	 <!-- Empty at the Moment -->
+	  
 	</svelte:fragment>
 
 	<!-- <svelte:fragment slot="sidebarLeft">
@@ -173,4 +174,7 @@
 	</svelte:fragment> -->
 
 	<slot />
+
+	<div style="height: 100px;"></div>
+
 </AppShell>
